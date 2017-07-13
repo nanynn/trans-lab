@@ -1,0 +1,63 @@
+/* 
+COLORES TRANS-LAB:
+tipografía y dividers: #acacae;
+botones:  #3b4674;
+amarillo: #f6a800;
+gris oscuro: #3e3f41;
+ */
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+body{
+	background-color: #3e3f41;
+}
+
+.img-logo{
+	padding-top: 15%;
+	width: 25%;
+}
+
+.title-logo{
+	font-family: 'Anton', sans-serif;
+	color: #f6a800;
+	font-size: 48px;
+}
+
+.cuadro-input{
+	background-color: #fff;
+	border-bottom: none;
+	margin: 0 auto;
+}
+
+#btn-inicio{
+	background-color: #f6a800;
+	padding: 0;
+	width: 100%;
+}
+
+.a-inicio{
+	color: #f6a800;
+}
+
+.cuadro-input input:not([type]),
+input[type=password]:not(.browser-default),
+input[type=email]:not(.browser-default),
+{
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    height: 3rem;
+    width: 100%;
+    font-size: 1rem;
+    margin: 0 0 20px 0;
+    padding: 0;
+    box-shadow: none;
+    box-sizing: content-box;
+    transition: all 0.3s;
+}
