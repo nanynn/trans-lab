@@ -16,87 +16,13 @@ gris claro:#3e3f41;
 }
 
 
-/******Index******/
-#inicio{
-	background-color: #3e3f41;
-}
-.img-logo{
-	padding-top: 15%;
-	width: 25%;
-}
+/******Index
+Se creo hoja de estilo propia porque el border bottom sacado del input inicial,
+ afectaba a los estilos posteriores******/
 
-.title-logo{
-	font-family: 'Anton', sans-serif;
-	color: #f6a800;
-	font-size: 48px;
-}
-
-.cuadro-input{
-	background-color: #fff;
-	border-bottom: none;
-	margin: 0 auto;
-}
-
-/*Borrar border botton que viene por default del input*/
-input:not([type]), input[type=text]:not(.browser-default), 
-input[type=password]:not(.browser-default), 
-input[type=email]:not(.browser-default), 
-input[type=url]:not(.browser-default), 
-input[type=time]:not(.browser-default), 
-input[type=date]:not(.browser-default), 
-input[type=datetime]:not(.browser-default), 
-input[type=datetime-local]:not(.browser-default), 
-input[type=tel]:not(.browser-default), 
-input[type=number]:not(.browser-default), 
-input[type=search]:not(.browser-default), 
-textarea.materialize-textarea{
-	background-color: transparent; 
-    border: none;
-   	border-bottom: none; 
-    border-radius: 0;
-    outline: none;
-    height: 3rem;
-    width: 100%;
-    /*margin: 0 0 20px 0;*/
-    padding: 0;
-    box-shadow: none;
-    box-sizing: content-box;
-}
-
-/*Borrar border botton con efecto tipo hover al escribir en el input*/
-input:not([type]):focus:not([readonly]), 
-input[type=text]:not(.browser-default):focus:not([readonly]), 
-input[type=password]:not(.browser-default):focus:not([readonly]), 
-input[type=email]:not(.browser-default):focus:not([readonly]), 
-input[type=url]:not(.browser-default):focus:not([readonly]), 
-input[type=time]:not(.browser-default):focus:not([readonly]), 
-input[type=date]:not(.browser-default):focus:not([readonly]), 
-input[type=datetime]:not(.browser-default):focus:not([readonly]), 
-input[type=datetime-local]:not(.browser-default):focus:not([readonly]), 
-input[type=tel]:not(.browser-default):focus:not([readonly]), 
-input[type=number]:not(.browser-default):focus:not([readonly]), 
-input[type=search]:not(.browser-default):focus:not([readonly]), 
-textarea.materialize-textarea:focus:not([readonly]){
-	border-bottom: none;
-    box-shadow: none;
-}
-
-.rayita-inicio{
-	border-bottom: 1px solid #7F7F7F;
-}
-
-#btn-inicio{
-	background-color: #f6a800;
-	padding: 0;
-	width: 100%;
-}
-
-.a-inicio{
-	color: #f6a800;
-}
 
 /******Opciones******/
-#opciones{
+#fondo-gris{
 	background-color: #dddee0;
 	width: 100%;
 }
@@ -117,7 +43,43 @@ textarea.materialize-textarea:focus:not([readonly]){
 	padding-top: 40%;
 }
 
-#btn-opc{
+#btn-yellow{
 	background-color: #f6a800;
 	width: 100%;
 }
+
+/******Usuario******/
+.caja-user{
+	background-color: #f6a800;
+	padding-top:10%;
+	padding-bottom: 10%;
+	margin: 0;
+}
+
+.img-user{
+	width: 30%;
+	border:3px solid #fff;
+}
+
+/*Borrar border botton con efecto tipo hover al escribir en el input*/
+input:not([type]):focus:not([readonly]), 
+input[type=text]:not(.browser-default):focus:not([readonly]), 
+input[type=password]:not(.browser-default):focus:not([readonly]), 
+input[type=email]:not(.browser-default):focus:not([readonly]), 
+input[type=url]:not(.browser-default):focus:not([readonly]), 
+input[type=time]:not(.browser-default):focus:not([readonly]), 
+input[type=date]:not(.browser-default):focus:not([readonly]), 
+input[type=datetime]:not(.browser-default):focus:not([readonly]), 
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]), 
+input[type=tel]:not(.browser-default):focus:not([readonly]), 
+input[type=number]:not(.browser-default):focus:not([readonly]), 
+input[type=search]:not(.browser-default):focus:not([readonly]), 
+textarea.materialize-textarea:focus:not([readonly]){
+	border-bottom: 1px solid #9e9e9e;
+    box-shadow: none;
+}
+
+.title-dos{
+	font-size: 36px;
+}
+
