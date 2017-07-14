@@ -123,3 +123,15 @@ textarea.materialize-textarea:focus:not([readonly]){
   right: 100%;
   top: 10px;
 }
+
+.correo-user{
+	background-color: #fff;
+	color: #000;
+}
+
+.nombre-local{
+	background-color: #fff;
+	padding: 5%;
+	width: 80%;
+	margin: 0 auto;
+}

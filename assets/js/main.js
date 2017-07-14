@@ -11,7 +11,8 @@ $(document).ready(function() {
 
 		if(validarCorreo() && validarContra()){
 			window.open('opciones.html','_self',false);
-			localStorage.email = email;
+			var email = $('#icon_prefix').val();
+			localStorage.setItem("email", email);
 		}
 	});
 });
@@ -41,5 +42,30 @@ var validarContra= function(){
 		return true;
 	}
 };
+	
 
+var api = function(){
+	var num = $('#saldo-card').val();
 
+	$.ajax({
+		url: 'http://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip=49887442',
+		type: 'GET',
+		dataType: 'json',
+	})
+	.done(function(res) {
+		console.log(res);
+			Array.from(res.saldoTarjeta).forEach(function(element){
+				console.log(element);
+			});
+	})
+	.fail(function() {
+		console.log("error");
+	})
+	.always(function() {
+		console.log("complete");
+	});
+	
+}
+
+//marti:49887442
+//vale:18048267
