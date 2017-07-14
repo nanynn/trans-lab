@@ -1,8 +1,6 @@
 $(document).ready(function() {
 	$(".button-collapse").sideNav();
 	$('.collapsible').collapsible();
-	
-	api();
 
 	$('#btn-inicio').click(function(e) {
 		e.preventDefault();
