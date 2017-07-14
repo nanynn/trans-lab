@@ -7,27 +7,28 @@ $(document).ready(function($) {
 		var costo = 0;
 		var saldoFinal = 0;
 
-		$('.saldo-tarjeta').removeClass('hide');
+		$('.costo-pasaje').removeClass('hide');
+		$('.saldo-actual').removeClass('hide');
 		$('.saldo-tarjeta').html('');
 
 		$.ajax({
-		url: 'http://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip='+tarjeta,
+		url: 'https://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip='+tarjeta,
 		type: 'GET',
 		dataType: 'json',
 		})
-		.done(function(res)){
+		.done(function(){
 			$('.btn-tarifa').html('');
 			costo = $('#tarifas-horario').val();
 
-			$('.costo-pasaje').append(costo);
+			$('.costo-pasaje').append('<p>El costo del pasaje es: </p>'+ costo);
 		})
 
-
-		.done(function(res) {
-			console.log(res.saldoTarjeta);
-			$('.saldo-tarjeta').append('<p>Su saldo es: </p>'+res.saldoTarjeta);
+		.done(function(e){
+			saldo = e.saldoTarjeta;
+			saldoFinal = parseInt(saldo.substr(1).split(".").join("")) - parseInt(costo);
+			console.log(saldoFinal);
+			$('.saldo-actual').append('<p>Su saldo final es: </p>'+ saldoFinal);
 		})
-
 
 		.fail(function() {
 			console.log("error");
