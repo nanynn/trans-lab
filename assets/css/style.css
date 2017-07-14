@@ -101,3 +101,25 @@ textarea.materialize-textarea:focus:not([readonly]){
 	padding-top:5%;
 }
 
+.input-field  span{
+  display: block;
+  background-color: rgba(51,51,51,0.8);
+  padding: 5px;
+  position: absolute;
+  left: 105%;
+  top: 8px;
+  width: 200px;
+  color: white;
+}
+
+.input-field  span:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-right: 10px solid rgba(51,51,51,0.8);
+  border-bottom: 5px solid transparent;
+  position: absolute;
+  right: 100%;
+  top: 10px;
+}
