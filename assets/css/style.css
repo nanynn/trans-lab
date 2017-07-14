@@ -27,12 +27,20 @@ Se creo hoja de estilo propia porque el border bottom sacado del input inicial,
 	width: 100%;
 }
 
-.logo-opc{
-	color: #fff;
-}
-
 .cajita-opc{
 	background-color: #3e3f41;
+	display: inline-block;
+	width: 100%;
+	position: relative;
+}
+
+#logo-opc{
+	color: #fff;
+	margin: 0;
+	position: absolute;
+  	top: 50%; 
+  	left: 50%;
+  	transform: translate(-50%, -50%);
 }
 
 #icon-opc{
@@ -47,18 +55,22 @@ Se creo hoja de estilo propia porque el border bottom sacado del input inicial,
 	background-color: #f6a800;
 	width: 100%;
 }
-
+#btn-yellow-chico{
+	background-color: #f6a800;
+}
 /******Usuario******/
 .caja-user{
 	background-color: #f6a800;
-	padding-top:10%;
-	padding-bottom: 10%;
 	margin: 0;
 }
 
 .img-user{
+	padding-top: 10%;
+	padding-bottom: 10%;
 	width: 30%;
-	border:3px solid #fff;
+}
+.brand-logo{
+	display: inline-block;
 }
 
 /*Borrar border botton con efecto tipo hover al escribir en el input*/
@@ -80,6 +92,12 @@ textarea.materialize-textarea:focus:not([readonly]){
 }
 
 .title-dos{
+	padding-top: 10%;
+	padding-bottom: 10%;
 	font-size: 36px;
+}
+
+.caja-preg{
+	padding-top:5%;
 }
 
