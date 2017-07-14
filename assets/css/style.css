@@ -4,6 +4,7 @@ tipografía y dividers: #acacae;
 botones:  #3b4674;
 amarillo: #f6a800;
 gris oscuro: #3e3f41;
+gris claro:#3e3f41;
  */
 
 *{
@@ -13,10 +14,12 @@ gris oscuro: #3e3f41;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
 }
-body{
+
+
+/******Index******/
+#inicio{
 	background-color: #3e3f41;
 }
-
 .img-logo{
 	padding-top: 15%;
 	width: 25%;
@@ -34,6 +37,54 @@ body{
 	margin: 0 auto;
 }
 
+/*Borrar border botton que viene por default del input*/
+input:not([type]), input[type=text]:not(.browser-default), 
+input[type=password]:not(.browser-default), 
+input[type=email]:not(.browser-default), 
+input[type=url]:not(.browser-default), 
+input[type=time]:not(.browser-default), 
+input[type=date]:not(.browser-default), 
+input[type=datetime]:not(.browser-default), 
+input[type=datetime-local]:not(.browser-default), 
+input[type=tel]:not(.browser-default), 
+input[type=number]:not(.browser-default), 
+input[type=search]:not(.browser-default), 
+textarea.materialize-textarea{
+	background-color: transparent; 
+    border: none;
+   	border-bottom: none; 
+    border-radius: 0;
+    outline: none;
+    height: 3rem;
+    width: 100%;
+    /*margin: 0 0 20px 0;*/
+    padding: 0;
+    box-shadow: none;
+    box-sizing: content-box;
+}
+
+/*Borrar border botton con efecto tipo hover al escribir en el input*/
+input:not([type]):focus:not([readonly]), 
+input[type=text]:not(.browser-default):focus:not([readonly]), 
+input[type=password]:not(.browser-default):focus:not([readonly]), 
+input[type=email]:not(.browser-default):focus:not([readonly]), 
+input[type=url]:not(.browser-default):focus:not([readonly]), 
+input[type=time]:not(.browser-default):focus:not([readonly]), 
+input[type=date]:not(.browser-default):focus:not([readonly]), 
+input[type=datetime]:not(.browser-default):focus:not([readonly]), 
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]), 
+input[type=tel]:not(.browser-default):focus:not([readonly]), 
+input[type=number]:not(.browser-default):focus:not([readonly]), 
+input[type=search]:not(.browser-default):focus:not([readonly]), 
+textarea.materialize-textarea:focus:not([readonly]){
+	border-bottom: none;
+    box-shadow: none;
+}
+
+.rayita-inicio{
+	border-bottom: 1px solid #7F7F7F;
+}
+
 #btn-inicio{
 	background-color: #f6a800;
 	padding: 0;
@@ -44,20 +95,29 @@ body{
 	color: #f6a800;
 }
 
-.cuadro-input input:not([type]),
-input[type=password]:not(.browser-default),
-input[type=email]:not(.browser-default),
-{
-    background-color: transparent;
-    border: none;
-    border-radius: 0;
-    outline: none;
-    height: 3rem;
-    width: 100%;
-    font-size: 1rem;
-    margin: 0 0 20px 0;
-    padding: 0;
-    box-shadow: none;
-    box-sizing: content-box;
-    transition: all 0.3s;
+/******Opciones******/
+#opciones{
+	background-color: #dddee0;
+	width: 100%;
+}
+
+.logo-opc{
+	color: #fff;
+}
+
+.cajita-opc{
+	background-color: #3e3f41;
+}
+
+#icon-opc{
+	color: #f6a800;
+}
+
+.botones-opc{
+	padding-top: 40%;
+}
+
+#btn-opc{
+	background-color: #f6a800;
+	width: 100%;
 }
